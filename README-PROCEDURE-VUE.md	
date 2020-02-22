@@ -42,5 +42,12 @@ yarn serve
 # additional modules
 
 ```
-# yarn add gh-pages --dev
+yarn add gh-pages --dev
+```
+
+# gh-pages
+```
+cd ~/IdeaProjects/iwaki-atomic-vue/atomic-vue
+yarn build
+yarn deploy
 ```
