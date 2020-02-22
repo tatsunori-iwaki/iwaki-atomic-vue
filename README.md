@@ -1,50 +1,22 @@
-# create vue project
+<h1 align="center">
+  <br>
+  <img src="./README/icon.png"alt="Markdownify" width="200">
+  <br>
+  typescript + vuejs examples.
+  <br>
+</h1>
+<h4 align="center">
+  <br>Implemented in a rough feeling.
+  <br>The First, implementation of the side menu and header.
+  <br>
+  <br>
+</h4>
 
-```
-cd ~/IdeaProjects/iwaki-atomic-vue
-vue create atomic-vue
-```
+# screen shots
 
-# choose setup
+![](README/screen-shot-001.png)
+![](README/screen-shot-002.png)
 
-```
-Vue CLI v3.12.0
-┌───────────────────────────┐
-│  Update available: 4.2.2  │
-└───────────────────────────┘
-? Please pick a preset: Manually select features
-? Check the features needed for your project: Babel, TS, Router, Vuex, CSS Pre-processors, Linter,
- Unit
-? Use class-style component syntax? Yes
-? Use Babel alongside TypeScript (required for modern mode, auto-detected polyfills, transpiling J
-SX)? Yes
-? Use history mode for router? (Requires proper server setup for index fallback in production) Yes
+# Initial build documentation
 
-
-? Pick a CSS pre-processor (PostCSS, Autoprefixer and CSS Modules are supported by default): Sass/
-SCSS (with dart-sass)
-? Pick a linter / formatter config: Prettier
-? Pick additional lint features: (Press <space> to select, <a> to toggle all, <i> to invert select
-ion)Lint on save
-? Pick a unit testing solution: Jest
-? Where do you prefer placing config for Babel, PostCSS, ESLint, etc.? In dedicated config files
-? Save this as a preset for future projects? No
-```
-
-# first run
-
-```
-cd ~/IdeaProjects/iwaki-atomic-vue/atomic-vue
-yarn test:unit
-yarn serve
-```
-
-# additional modules
-
-```
-# yarn add gh-pages --dev
-```
-
-# CSS のみでグローバルメニューを 3D アニメーションで開閉表示するサンプル
-
-https://digipress.info/tech/sliding-side-menu-with-pure-css-3d-transition/
+[README-PROCEDURE-VUE.md](./README-PROCEDURE-VUE.md)

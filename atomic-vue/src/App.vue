@@ -30,7 +30,6 @@ export default class App extends Vue {
   }
 
   private handlClickRouterLinkEvent(navModel: NavModel) {
-    console.log("click router link from app.vue", navModel);
     this.navModel = navModel;
   }
 }
