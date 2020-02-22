@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    <Nav :nav-models="navModels" />
+    <Header :nav-model="navModel" />
+    <Nav
+      :nav-models="navModels"
+      @click-router-link-event="handlClickRouterLinkEvent"
+    />
     <router-view />
   </div>
 </template>
@@ -11,16 +15,23 @@ import { NavModel } from "./domain/model/menu/NavModel";
 
 @Component({
   components: {
+    Header: () => import("@/presentation/components/menu/Header.vue"),
     Nav: () => import("@/presentation/components/menu/Nav.vue"),
     HelloWorld: () => import("@/presentation/components/HelloWorld.vue")
   }
 })
 export default class App extends Vue {
   private navModels: NavModel[] = [];
+  private navModel: NavModel = new NavModel("/", "home");
 
   created() {
     this.navModels.push(new NavModel("/", "home"));
     this.navModels.push(new NavModel("/about", "about"));
+  }
+
+  private handlClickRouterLinkEvent(navModel: NavModel) {
+    console.log("click router link from app.vue", navModel);
+    this.navModel = navModel;
   }
 }
 </script>
