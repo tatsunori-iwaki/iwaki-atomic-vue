@@ -14,19 +14,5 @@ export default class Header extends Vue {
 </script>
 
 <style lang="scss">
-.Header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 35px;
-  padding: 10px;
-  background-color: #000000;
-  color: #bbbbbb;
-  font-size: 28px;
-}
-.Contents {
-  width: 100%;
-  overflow: auto;
-}
+@import "@/presentation/styles/menu/Header.scss";
 </style>
